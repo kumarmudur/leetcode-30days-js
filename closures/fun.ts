@@ -1,6 +1,7 @@
 const createHelloWorld = () => {
-    return function (...args) {
+    return function(): string {
         return 'Hello World';
     }
-};  
+}
 
+export {};

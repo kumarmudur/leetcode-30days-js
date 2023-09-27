@@ -14,5 +14,12 @@ const createHelloWorld2 = () => {
     return (...args) => 'Hello World';
 }
 
+function createAdder(a) {
+    return function add(b) {
+        const sum = a + b;
+        return sum;
+    }
+}
+
 
 

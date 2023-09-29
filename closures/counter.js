@@ -6,3 +6,10 @@ const createCounter = (n) => {
         return currentCount;
     }
 }
+
+// Solution 2: Postfix Increment Syntax
+const createCounter1 = function(n) {
+    return function() {
+      return n++;      
+    };
+};

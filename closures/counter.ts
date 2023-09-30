@@ -7,4 +7,12 @@ const createCounter = (n: number) => {
     }
 }
 
+// Solution 2: Postfix Increment Syntax
+const createCounter2 = function(n: number) {
+    return function() {
+      return n++;      
+    };
+};
+
+
 export {};

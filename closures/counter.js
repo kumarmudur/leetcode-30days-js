@@ -21,3 +21,8 @@ const createCounter2 = function(n) {
       return ++n;      
     };
 };
+
+//Solution 4: Postfix Increment Syntax With Arrow Function
+const createCounter3 = function(n) {
+    return () => n++;
+};

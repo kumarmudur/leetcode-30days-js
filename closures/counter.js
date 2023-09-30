@@ -13,3 +13,11 @@ const createCounter1 = function(n) {
       return n++;      
     };
 };
+
+// Solution 3: Prefix Decrement and Increment Syntax
+const createCounter2 = function(n) {
+    --n;
+    return function() {
+      return ++n;      
+    };
+};

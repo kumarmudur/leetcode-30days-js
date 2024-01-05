@@ -26,3 +26,25 @@ const createCounter2 = function(n) {
 const createCounter3 = function(n) {
     return () => n++;
 };
+
+/**
+ * @param {integer} init
+ * @return { increment: Function, decrement: Function, reset: Function }
+ */
+var createCounterAll = function(init) {
+    let currentCount = init;
+    return {
+        increment: function() {
+            currentCount += 1;
+            return currentCount;
+        },
+        decrement: function() {
+            currentCount -= 1;
+            return currentCount;
+        },
+        reset: function() {
+            currentCount = init;
+            return currentCount;
+        }
+    }
+};
